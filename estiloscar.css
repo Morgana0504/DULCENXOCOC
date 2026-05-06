@@ -1,0 +1,204 @@
+/*  Contenido general */
+header {
+  background-color: #876943;
+  color: #f5f0e6;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* el menu de navegacion en todas */
+nav {
+  background-color: #7a9a68;
+  padding: 0.5rem 2rem;
+}
+
+.carrito,
+.historial,
+.articulos,
+.logistica {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+/* Centrar los titulos */
+.carrito h2,
+.historial h2,
+.articulos h2,
+.logistica h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4a3c2a;
+}
+
+/* Diseño de boton de regreso */
+.selector {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.selector a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7a9a68;
+  color: #f5f0e6;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.selector a:hover {
+  background-color: #c9a66b;
+  transform: translateY(-2px);
+}
+
+/* Fondos de cada pagina*/
+.carrito {
+  background: url("imagenes/micarrito.png") no-repeat center center;
+  background-size: cover;
+}
+
+.historial {
+  background: url("imagenes/fondocat.png") no-repeat center center;
+  background-size: cover;
+}
+
+.logistica {
+  background: url("imagenes/micarrito.png") no-repeat center center;
+  background-size: cover;
+}
+
+.articulos {
+  background: url("imagenes/micarrito.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* Navegacion dentro de carrito */
+.carrito .opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.carrito .opciones a {
+  text-decoration: none;
+  background-color: rgba(245,240,230,0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  color: #4a3c2a;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.carrito .opciones a:hover {
+  background-color: #7a9a68;
+  color: #f5f0e6;
+}
+
+/* tabla en historial*/
+.historial table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(245,240,230,0.95);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.historial th,
+.historial td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #c9a66b;
+}
+
+.historial th {
+  background-color: #7a9a68;
+  color: #f5f0e6;
+}
+
+.historial tr:hover {
+  background-color: rgba(201,166,107,0.2);
+}
+
+/* colores de estatus */
+.entregado {
+  color: #4a3c2a;
+  font-weight: bold;
+}
+
+.enviado {
+  color: #7a9a68;
+  font-weight: bold;
+}
+
+.pendiente {
+  color: #c9a66b;
+  font-weight: bold;
+}
+
+/* Vista de rastreo */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.evento {
+  display: flex;
+  align-items: center;
+  background-color: rgba(245,240,230,0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.evento:hover {
+  transform: translateX(5px);
+}
+
+.icono {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.detalle h3 {
+  margin: 0;
+  color: #4a3c2a;
+}
+
+.detalle p {
+  margin: 0.3rem 0 0;
+}
+/* Acomodo de los articulos en carrito */
+.articulos .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* status */
+.completado {
+  border-left: 6px solid #7a9a68;
+}
+
+.activo {
+  border-left: 6px solid #c9a66b;
+}
+
+.pendiente {
+  border-left: 6px solid #aaa;
+}

@@ -1,0 +1,314 @@
+/* --- VARIABLES --- */
+:root {
+    --terracota: #7b422a;
+    --crema-fondo: #bdaa79;
+    --verde-xococ: #6b8e23;
+    --azul-boceto: #4a75bc;
+    --cafe-oscuro: #3e2723;
+}
+
+.encabezado-inicio {
+  background-color: #d0ab66;
+  border-bottom: 3px solid #6b8e23;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  font-family: 'Georgia', serif;
+  color: #4b2e1e;
+}
+
+.encabezado-inicio h1 {
+  font-size: 2.5em;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.icono-nispero {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icono-mezquite {
+  width: 160px; /* tamaño grande */
+  height: auto;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+barra-verde a.activo {
+  background-color: #4b2e1e;
+  border-radius: 5px;
+}
+
+
+/* TITULO INICIO */
+.encabezado-titulo {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+.block-label {
+    text-align: center;       /* centra el texto */
+    font-weight: bold;
+    font-size: 4 em;         /* más grande */
+    color: var(--cafe-oscuro);
+    margin-bottom: 25px;      /* más espacio debajo */
+    letter-spacing: 2px;      /* separación entre letras */
+    border-bottom: 3px solid var(--verde-xococ);
+display: inline-block;
+padding-bottom: 5px;
+
+}
+
+
+
+
+/* BARRA VERDE */
+.barra-verde {
+    background-color: var(--verde-xococ);
+    padding: 10px 0;
+}
+.barra-verde ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0; padding: 0;
+}
+.barra-verde li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 50px;
+    position: relative;
+}
+.main-container::before, .main-container::after {
+    content: '';
+    position: absolute;
+    width: 60px; height: 60px;
+    border: 5px solid var(--terracota);
+}
+.main-container::before { top: 0; left: 0; border-right: none; border-bottom: none; }
+.main-container::after { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+/* BLOQUES */
+.section-block {
+    margin-bottom: 50px;
+}
+.block-label {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--cafe-oscuro);
+    margin-bottom: 15px;
+}
+
+/* IMAGEN QUIÉNES SOMOS */
+.image-placeholder-link {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.image-placeholder-link img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+}
+
+/* IMÁGENES REDONDAS */
+/* Estilo solo para la sección artesanal */
+.artesanales {
+  background-color: #f8f1e4;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 2px solid #d2b48c;
+  border-bottom: 2px solid #d2b48c;
+  font-family: 'Georgia', serif;
+  color: #5a3e2b;
+}
+
+.artesanales h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #4b2e1e;
+}
+
+.artesanales p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  background-color: #fffaf3;
+  border: 1px solid #d2b48c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(90, 62, 43, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  font-size: 1.2em;
+  color: #4b2e1e;
+}
+
+/* BLOQUE AZUL */
+/* Sección final con tres cuadros */
+/* Encabezado ilustrado */
+.dirigido {
+  background-color: #f8f1e4;
+  text-align: center;
+  padding: 60px 20px 30px;
+  font-family: 'Georgia', serif;
+  color: #4b2e1e;
+  border-top: 3px solid #6b8e23;
+}
+
+.encabezado-dirigido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.encabezado-dirigido h2 {
+  font-size: 2em;
+  color: #4b2e1e;
+  letter-spacing: 1px;
+}
+
+.icono-izq, .icono-der {
+  width: 80px;
+  height: auto;
+}
+
+.info-final {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  background-color: #dbe79d;
+  padding: 50px 20px;
+  border-top: 3px solid #e6eb80;
+  font-family: 'Georgia', serif;
+  color: #4b2e1e;
+}
+
+.cuadro {
+  background-color: #dcc9ad;
+  border: 1px solid #d2b48c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(90, 62, 43, 0.2);
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(90, 62, 43, 0.3);
+}
+
+.cuadro h3 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #4b2e1e;
+}
+
+.cuadro p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+/* Círculos decorativos con texto */
+.circulo {
+  position: absolute;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fffaf3;
+  z-index: -1; /* detrás del contenido */
+  opacity: 0.85; /* transparencia para que no opaquen */
+}
+/* Etiquetas informativas */
+.etiquetas {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #6b8e23; /* verde artesanal */
+  color: #fffaf3;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(90, 62, 43, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.tag:nth-child(2) {
+  background-color: #d2b48c; /* beige */
+  color: #4b2e1e;
+}
+
+.tag:nth-child(3) {
+  background-color: #4b2e1e; /* marrón */
+  color: #fffaf3;
+}
+
+.tag:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .image-placeholder-link {
+        max-width: 100%;
+    }
+    .circulo-imagen img {
+        width: 90px;
+        height: 90px;
+    }
+}

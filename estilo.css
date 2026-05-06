@@ -1,0 +1,170 @@
+/* --- ESTILOS GENERALES (BASE) --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Fuente similar a la de tu imagen (Segoe UI) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* --- CONTENEDOR PRINCIPAL CON LA IMAGEN DE FONDO --- */
+.background-container {
+    /* Carga tu imagen de los árboles y productos completa */
+    background-image: url('imagenes/fondoContac.jpeg'); 
+    background-size: cover;          /* Hace que la imagen cubra todo */
+    background-position: center;     /* Centra el paisaje */
+    background-attachment: fixed;    /* El fondo no se mueve al hacer scroll */
+    min-height: 100vh;               /* Altura mínima de toda la pantalla */
+    display: flex;
+    flex-direction: column;          /* Elementos en columna (logo arriba, form abajo) */
+}
+
+/* --- ENCABEZADO (LOGO Y TEXTO) --- */
+.page-header {
+    text-align: center;
+    padding: 30px 0;                 /* Espacio arriba y abajo */
+}
+
+.main-logo {
+    width: 200px;                    /* Ajusta el tamaño de tu logo recortado */
+    margin-bottom: 10px;
+}
+
+.header-text {
+    font-size: 24px;
+    color: #3e2723;                  /* Color café muy oscuro */
+    font-weight: 400;
+    margin: 0;
+}
+
+/* --- DISTRIBUCIÓN DEL CONTENIDO (FLEXBOX) --- */
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start;         /* Centra la tarjeta horizontalmente si no hay spacer */
+    align-items: center;             /* Centra verticalmente en el espacio disponible */
+    flex-grow: 1;                    /* Ocupa el resto del espacio disponible */
+    padding: 0 350px;                 /* Espacio lateral */
+    margin-bottom: 50px;             /* Espacio abajo para que no pegue a los productos de fondo */
+}
+
+/* --- LA TARJETA DE REGISTRO (ESTILO PERGAMINO) --- */
+.login-card {
+    background-color: #f6e8cc;       /* Color crema suave tipo pergamino */
+    padding: 35px 40px;
+    border-radius: 12px;             /* Esquinas suaves */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Sombra suave para dar profundidad */
+    width: 380px;                    /* Ancho de la tarjeta */
+    text-align: center;
+}
+
+.login-card h2 {
+    color: #3e2723;                  /* Color café oscuro */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* --- ESTILOS DE LOS CAMPOS DE ENTRADA (INPUTS) --- */
+.input-group {
+    text-align: left;                /* Alinea las etiquetas a la izquierda */
+    margin-bottom: 18px;             /* Espacio entre campos */
+    position: relative;              /* Para posicionar el ojo de la contraseña */
+}
+
+.input-group label {
+    display: block;                  /* Texto arriba del cuadro */
+    font-size: 14px;
+    color: #3e2723;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;                     /* Cuadro de texto ocupa todo el ancho */
+    padding: 12px;                   /* Grosor del cuadro */
+    border: 1px solid #c2b296;       /* Borde café suave */
+    border-radius: 6px;              /* Esquinas suavizadas */
+    box-sizing: border-box;          /* Para que el padding no ensanche el cuadro */
+    font-family: inherit;            /* Usa la misma fuente */
+}
+
+.input-group input::placeholder {
+    color: #b0a08a;                  /* Color del texto de ayuda */
+}
+
+/* Estilo específico para el grupo de contraseña con el ojo */
+.password-group input {
+    padding-right: 40px;             /* Espacio para el icono de ojo */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;                    /* Centrado verticalmente */
+    color: #b0a08a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* --- LOS BOTONES (COLORES TERRNACOTA) --- */
+.btn-register, .btn-login {
+    width: 100%;                     /* Botón ancho */
+    padding: 14px;                   /* Grosor del botón */
+    border: none;
+    border-radius: 25px;             /* Forma ovalada */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;                /* Efecto suave al pasar el mouse */
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Pequeña sombra */
+}
+
+/* Botón de Registrarse (Café terracota) */
+.btn-register {
+    background-color: #7b422a;       /* El color terracota de tu imagen */
+    color: white;                    /* Letras blancas */
+}
+
+.btn-register:hover {
+    background-color: #5d3221;       /* Un poco más oscuro al pasar el mouse */
+}
+
+/* Botón de Entrar (Solo borde y transparente) */
+.btn-login {
+    background-color: transparent;   /* Sin fondo */
+    border: 2px solid #7b422a;       /* Solo un borde café */
+    color: #7b422a;                  /* Letras color café */
+    padding: 12px;                   /* Un poco más fino */
+    margin-top: 12px;
+}
+
+.btn-login:hover {
+    background-color: rgba(123, 66, 42, 0.1); /* Ligero fondo al pasar el mouse */
+}
+
+/* Texto de "O ingresa con" */
+.divider {
+    margin: 20px 0;
+    color: #777;
+    font-size: 13px;
+    position: relative;              /* Para la línea divisoria */
+}
+
+/* --- ENLACES DEL PIE DEL FORMULARIO --- */
+.form-footer-links {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.form-footer-links a {
+    color: #7b422a;                  /* Color terracota */
+    text-decoration: underline;      /* Subrayado */
+}
+
+.social-login {
+    color: #777;
+    margin-top: 8px;
+}

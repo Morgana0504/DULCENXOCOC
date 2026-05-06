@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: url("imagenes/micarrito.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #4b2e1e;
+}
+
+
+/* Encabezado */
+.encabezado-inicio {
+  background-color: #f8f1e4;
+  border-bottom: 3px solid #6b8e23;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.encabezado-inicio h1 {
+  font-size: 2.5em;
+  margin: 0;
+  letter-spacing: 2px;
+  color: #4b2e1e;
+}
+
+.icono-nispero {
+  width: 80px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icono-mezquite {
+  width: 160px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Barra de navegación */
+.barra-verde {
+  background-color: #6b8e23;
+}
+
+.barra-verde ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.barra-verde li {
+  margin: 0 15px;
+}
+
+.barra-verde a {
+  color: #fffaf3;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.barra-verde a:hover,
+.barra-verde a.activo {
+  background-color: #4b2e1e;
+  border-radius: 5px;
+}
+
+/* Contenido principal */
+.info-pagina {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.bloque {
+  margin-bottom: 60px;
+}
+
+.bloque h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #4b2e1e;
+}
+
+/* Imágenes */
+.imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.imagenes img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(90, 62, 43, 0.2);
+}
+
+/* Ingredientes */
+.ingredientes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ingrediente {
+  background-color: #fffaf3;
+  border: 1px solid #d2b48c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(90, 62, 43, 0.2);
+  text-align: left; /* Para que la lista se alinee bien */
+}
+
+.ingrediente h3 {
+  margin-bottom: 10px;
+  color: #4b2e1e;
+  text-align: center;
+}
+
+/* Listas dentro de ingredientes */
+.ingrediente ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.ingrediente li {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  color: #4b2e1e;
+}
+
+.ingrediente .descripcion {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.05em;
+  color: #5a3e2b;
+}
+
+/* Sección Garantía de Calidad */
+.garantia-calidad {
+  background-color: #f8f1e4;
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 3px solid #6b8e23;
+  font-family: 'Georgia', serif;
+  color: #4b2e1e;
+}
+
+.garantia-calidad h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #4b2e1e;
+}
+
+.bloques-calidad {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.bloque-calidad {
+  background-color: #fffaf3;
+  border: 1px solid #d2b48c;
+  border-radius: 10px;
+  width: 280px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(90, 62, 43, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-calidad:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(90, 62, 43, 0.3);
+}
+
+.bloque-calidad img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.bloque-calidad h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #4b2e1e;
+}
+
+.bloque-calidad p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Pie de página */
+.pie-info {
+  background-color: #6b8e23;
+  color: #fffaf3;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}

@@ -1,0 +1,78 @@
+header {
+  background-color: #cc944a;
+  color: #f5f0e6;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* el menu de navegacion en todas */
+nav {
+  background-color: #7dae60;
+  padding: 0.5rem 2rem;
+}
+
+.contacto {
+  padding: 2rem;
+  text-align: center;
+  background: url("imagenes/fondoContac.jpeg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 12px;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  background-color: rgba(245,240,230,0.85);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.contacto label {
+  text-align: left;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 0.5rem;
+  border: 2px solid #7a9a68;
+  border-radius: 5px;
+}
+
+.contacto button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #7a9a68;
+  color: #f5f0e6;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.contacto button:hover {
+  background-color: #c9a66b;
+}
+
+.info-extra {
+  background-color: rgba(255,255,255,0.8);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mensaje-contacto {
+  font-weight: bold;
+  background-color: rgba(166,163,157,0.85);
+  padding: 1rem;
+  border-radius: 10px;
+}

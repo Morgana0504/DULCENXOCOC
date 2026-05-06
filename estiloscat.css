@@ -1,0 +1,117 @@
+/* Main general */
+header {
+  background-color: #cc944a9b;
+  color: #f5f0e6;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* el menu de navegacion en todas */
+nav {
+  background-color: #648551;
+  padding: 0.5rem 2rem;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+  background: url("imagenes/fondocat.png") no-repeat center center;
+  background-attachment: fixed;
+}
+
+/* menu de opciones dentro del catalogo */
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.opciones a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.opciones img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #7a9a68;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.opciones img:hover {
+  transform: scale(1.05);
+  border-color: #c9a66b;
+}
+
+.opciones p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Para el menu dentro nav de gomitas y nieve */
+.selector {
+  margin-bottom: 1.5rem;
+}
+
+.selector a {
+  text-decoration: none;
+  color: #634115;
+  font-weight: bold;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #7a9a68;
+  border-radius: 5px;
+}
+
+.selector a:hover {
+  background-color: #7a9a68;
+  color: #f5f0e6;
+}
+
+/* vista de los productos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.producto {
+  background: url("imagenes/fondo.png") no-repeat center center;
+  background-size: cover;
+  border: 2px solid #c9a66b;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #7a9a68;
+}
+
+.producto h3 {
+  color: #4a3c2a;
+}
+
+.producto p {
+  font-weight: bold;
+  color: #7a9a68;
+}

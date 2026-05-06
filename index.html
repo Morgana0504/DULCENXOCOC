@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xococ - Crear Cuenta e Iniciar Sesión</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="background-container">
+
+        <header class="page-header">
+            <h1 class="header-text">Registrate o Inicia Sesión</h1>
+        </header>
+
+        <div class="content-wrapper">
+            
+            <section class="login-card">
+                <h2>Crear Cuenta</h2>
+                
+                <form>
+                    <div class="input-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" placeholder="Juan Pérez">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="input-group password-group">
+                        <label>Contraseña</label>
+                        <input type="password" placeholder="Contraseña">
+                        <span class="password-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </span>
+                    </div>
+
+                    <button type="submit" class="btn-register">Registrarse</button>
+                    
+                    <p class="divider">O ingresa con:</p>
+                    
+                    <button type="button" id="btnEntrar" class="btn-login">ENTRAR</button>
+                    
+                    <div class="form-footer-links">
+                        <p class="account-check">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
+                        <p class="social-login">O regístrate con Google / Facebook</p>
+                    </div>
+                </form>
+            </section>
+
+            <div class="spacer-right"></div>
+            
+        </div>
+
+    </div>
+<script>
+    // Localizamos el botón por su ID
+    const botonEntrar = document.getElementById('btnEntrar');
+
+    // Agregamos la acción de clic
+    botonEntrar.addEventListener('click', function() {
+        // Esta línea es la que hace el enlace. 
+        // Cámbiala por el nombre exacto de tu archivo principal (ej: principal.html)
+        window.location.href = 'principal.html'; 
+    });
+</script>
+</body>
+</html>
